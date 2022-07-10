@@ -28,12 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Generatebtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Generatebtn
+            // 
+            this.Generatebtn.BackColor = System.Drawing.Color.Honeydew;
+            this.Generatebtn.Font = new System.Drawing.Font("Segoe UI Symbol", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Generatebtn.Location = new System.Drawing.Point(253, 195);
+            this.Generatebtn.Name = "Generatebtn";
+            this.Generatebtn.Size = new System.Drawing.Size(258, 54);
+            this.Generatebtn.TabIndex = 0;
+            this.Generatebtn.Text = "Generate PDF Resume";
+            this.Generatebtn.UseVisualStyleBackColor = false;
+            this.Generatebtn.Click += new System.EventHandler(this.Generatebtn_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.Generatebtn);
+            this.Name = "Form1";
+            this.Text = "PDF Resume Generator ";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Button Generatebtn;
     }
 }
